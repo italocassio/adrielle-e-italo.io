@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Cozinha - Adrielle e Ítalo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Menu Responsivo */
+        nav {
+            background-color: #f4a261;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav .menu {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            nav .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Banner Responsivo */
+        .banner {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Section de Agradecimento */
+        .agradecimento {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .agradecimento .texto {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .agradecimento img {
+            flex: 1;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Section de Doação */
+        .doacao {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e9c46a;
+        }
+
+        .doacao h2 {
+            margin-bottom: 20px;
+        }
+
+        .doacao img {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        /* Rodapé Simples */
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Menu Responsivo -->
+    <nav>
+        <a href="#">Início</a>
+        <div class="menu">
+            <a href="#agradecimento">Agradecimento</a>
+            <a href="#doacao">Doação</a>
+            <a href="#rodape">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Banner Responsivo -->
+    <div class="banner">
+        <h1>Chá de Cozinha<br>Adrielle e Ítalo</h1>
+    </div>
+
+    <!-- Section de Agradecimento -->
+    <section class="agradecimento" id="agradecimento">
+        <div class="texto">
+            <h2>Agradecimento</h2>
+            <p>Estamos muito felizes em compartilhar este momento especial com vocês. Obrigado por todo carinho e por fazerem parte da nossa história.</p>
+        </div>
+        <img src="https://via.placeholder.com/600x400" alt="Imagem de agradecimento">
+    </section>
+
+    <!-- Section de Doação -->
+    <section class="doacao" id="doacao">
+        <h2>Doação</h2>
+        <p>Contribua com nosso sonho!</p>
+        <img src="https://via.placeholder.com/200" alt="QR Code para Pix">
+    </section>
+
+    <!-- Rodapé Simples -->
+    <footer id="rodape">
+        <p>&copy; 2024 Adrielle e Ítalo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
